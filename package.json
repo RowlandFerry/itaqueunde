@@ -1,0 +1,41 @@
+{
+  "name": "itaqueunde",
+  "version": "1.0.0",
+  "description": "A web3 events process manager",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p .",
+    "watch": "tsc -w",
+    "postinstall": "rm -f node_modules/web3/index.d.ts",
+    "prepublishOnly": "tsc -p ."
+  },
+  "keywords": [
+    "in",
+    "events",
+    "solidity",
+    "web3"
+  ],
+  "author": "DarrickBarton",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RowlandFerry/itaqueunde.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RowlandFerry/itaqueunde.git/issues"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "web3": "^1.0.0-beta.34"
+  },
+  "devDependencies": {
+    "@types/bunyan": "^1.8.4",
+    "@types/jest": "^23.3.0",
+    "@types/web3": "^1.0.0",
+    "jest": "^23.4.1",
+    "ts-jest": "^23.0.1",
+    "typescript": "^2.9.2"
+  }
+}
